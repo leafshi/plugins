@@ -294,7 +294,7 @@ class BirtReportService implements InitializingBean, ApplicationContextAware {
                         //Parameter is a List Box
                         if(param.name=="fchrDealerSerialNumber"){
                         	def dealerInstanceList = birtService.dealerInstanceList()
-                        	listentries << ['label': '全部', 'value': '']
+                        	listentries << ['label': '全部', 'value': '-']
 							dealerInstanceList?.each { dealerInstance ->
 								//Print out the selection choices
 								def value = dealerInstance[0]
